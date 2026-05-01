@@ -6,7 +6,7 @@ Claude Code Skills for Solvex team. Install via `npx skills`.
 
 | Skill | Description | Install |
 |-------|-------------|---------|
-| traffic-standards-kb | Chinese smart transportation standards knowledge base (GB/JT/T/GA) | `npx skills add huangyao8988/solvex-skills@traffic-standards-kb -g -y` |
+| traffic-standards-kb | Chinese smart transportation standards knowledge base (GB/JT/T/GA) | `npx skills add solvex-top/solvex-skills@traffic-standards-kb -g -y` |
 
 ## Quick Start
 
@@ -19,10 +19,10 @@ Claude Code Skills for Solvex team. Install via `npx skills`.
 
 ```bash
 # Install globally (available in all projects)
-npx skills add huangyao8988/solvex-skills@traffic-standards-kb -g -y
+npx skills add solvex-top/solvex-skills@traffic-standards-kb -g -y
 
 # Install to current project only
-npx skills add huangyao8988/solvex-skills@traffic-standards-kb -y
+npx skills add solvex-top/solvex-skills@traffic-standards-kb -y
 ```
 
 ### Configure API Key

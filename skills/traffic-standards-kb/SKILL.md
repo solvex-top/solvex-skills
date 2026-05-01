@@ -9,6 +9,22 @@ description: Use when writing Chinese smart transportation solutions (智慧路�
 
 Retrieve Chinese transportation standards (GB, JT/T, GA/T) via Solvex API. Detects domain → queries API → formats citations.
 
+## Installation
+
+```bash
+# Install globally (available in all projects)
+npx skills add solvex-top/solvex-skills@traffic-standards-kb -g -y
+
+# Install to current project only
+npx skills add solvex-top/solvex-skills@traffic-standards-kb -y
+
+# Update to latest version
+npx skills update traffic-standards-kb
+
+# Remove
+npx skills remove traffic-standards-kb
+```
+
 ## Prerequisites
 
 **API Key:** Get from https://top.solvexpert.top

@@ -6,6 +6,24 @@
 
 该技能通过 Solvex API 查询 RAGFlow 知识库，将自然语言问题转化为标准文献检索，并以规范格式返回标准编号、标题、执行单位、适用范围等信息，便于在方案中直接引用。
 
+## 安装
+
+```bash
+# 全局安装（所有项目可用）
+npx skills add solvex-top/solvex-skills@traffic-standards-kb -g -y
+
+# 安装到当前项目
+npx skills add solvex-top/solvex-skills@traffic-standards-kb -y
+
+# 更新到最新版本
+npx skills update traffic-standards-kb
+
+# 卸载
+npx skills remove traffic-standards-kb
+```
+
+**仓库地址：** https://github.com/solvex-top/solvex-skills
+
 ## 适用场景
 
 | 场景 | 关键词示例 |
