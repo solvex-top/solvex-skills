@@ -38,7 +38,7 @@ For `traffic-standards-kb`, set the API key after installation:
 export STANDARDS_API_KEY="your-api-key"
 ```
 
-Get your API key from: https://top.solvexpert.top
+Get your API key from: https://solvexpert.net
 
 ### Manage Skills
 

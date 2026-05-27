@@ -9,13 +9,13 @@ The Standards API uses **API Key Authentication only**:
 **Header:** `X-API-Key: $STANDARDS_API_KEY`
 
 ```bash
-curl -X POST "https://top.solvexpert.top/api/v1/standards/query" \
+curl -X POST "https://solvexpert.net/api/v1/standards/query" \
   -H "Content-Type: application/json" \
   -H "X-API-Key: $STANDARDS_API_KEY" \
   -d '{...}'
 ```
 
-Get API Key from: https://top.solvexpert.top
+Get API Key from: https://solvexpert.net
 
 ## Configuration
 
@@ -62,7 +62,7 @@ Get API Key from: https://top.solvexpert.top
 ```bash
 export STANDARDS_API_KEY="your-actual-api-key"
 
-curl -X POST "https://top.solvexpert.top/api/v1/standards/query" \
+curl -X POST "https://solvexpert.net/api/v1/standards/query" \
   -H "Content-Type: application/json" \
   -H "X-API-Key: $STANDARDS_API_KEY" \
   -d '{
@@ -108,7 +108,7 @@ curl -X POST "https://top.solvexpert.top/api/v1/standards/query" \
 - **Cause:** Missing or invalid API Key
 - **Fix:**
   - Set `X-API-Key` header with valid API Key
-  - Get API Key from: https://top.solvexpert.top
+  - Get API Key from: https://solvexpert.net
 
 ### 504 Gateway Timeout
 - **Cause:** Request taking longer than Nginx timeout (RAGFlow API slow)

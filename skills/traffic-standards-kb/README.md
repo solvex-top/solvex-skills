@@ -64,7 +64,7 @@ RAGFlow SearchBots API（两步检索）
 
 ### 1. 获取 API Key
 
-访问 [https://top.solvexpert.top](https://top.solvexpert.top) 注册并获取 API Key。
+访问 [https://solvexpert.net](https://solvexpert.net) 注册并获取 API Key。
 
 ### 2. 配置 API Key
 
@@ -82,7 +82,7 @@ RAGFlow SearchBots API（两步检索）
 export STANDARDS_API_KEY="solvex-your-api-key"  # 替换为实际 API Key
 ```
 
-> **注意：** 请将示例中的 `solvex-your-api-key` 替换为从 https://top.solvexpert.top 获取的实际 API Key。
+> **注意：** 请将示例中的 `solvex-your-api-key` 替换为从 https://solvexpert.net 获取的实际 API Key。
 
 **方式二：Claude settings.json（推荐用于 Claude 内部调用）**
 
@@ -101,7 +101,7 @@ export STANDARDS_API_KEY="solvex-your-api-key"  # 替换为实际 API Key
 ### 请求地址
 
 ```
-POST https://top.solvexpert.top/api/v1/standards/query
+POST https://solvexpert.net/api/v1/standards/query
 ```
 
 ### 认证方式
@@ -149,7 +149,7 @@ POST https://top.solvexpert.top/api/v1/standards/query
 ### 请求示例
 
 ```bash
-curl -s -X POST "https://top.solvexpert.top/api/v1/standards/query" \
+curl -s -X POST "https://solvexpert.net/api/v1/standards/query" \
   -H "Content-Type: application/json" \
   -H "X-API-Key: $STANDARDS_API_KEY" \
   -d '{

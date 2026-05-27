@@ -1,6 +1,6 @@
 ---
 name: traffic-standards-kb
-description: Use when writing Chinese smart transportation solutions (智慧路口, 智能停车, V2X, MaaS, ETC, 智慧公交, 智慧高速, 智慧服务区) or technical proposals requiring GB/JT/T/GA industry standards citation. Requires API key from https://top.solvexpert.top
+description: Use when writing Chinese smart transportation solutions (智慧路口, 智能停车, V2X, MaaS, ETC, 智慧公交, 智慧高速, 智慧服务区, 智慧交管, 智慧交运, 车路云一体化, 智能网联, 低空经济, 智慧物流, 自动驾驶, 智慧公交) or technical proposals requiring GB/JT/T/GA industry standards citation. Requires API key from https://solvexpert.net
 ---
 
 # Traffic Standards Knowledge Base
@@ -27,7 +27,7 @@ npx skills remove traffic-standards-kb
 
 ## Prerequisites
 
-**API Key:** Get from https://top.solvexpert.top
+**API Key:** Get from https://solvexpert.net
 
 ```bash
 # Option 1: Export in shell (for bash commands)
@@ -66,7 +66,7 @@ export STANDARDS_API_KEY="solvex-your-api-key"
 ### Minimum Working Request
 
 ```bash
-curl -s -X POST "https://top.solvexpert.top/api/v1/standards/query" \
+curl -s -X POST "https://solvexpert.net/api/v1/standards/query" \
   -H "Content-Type: application/json" \
   -H "X-API-Key: $STANDARDS_API_KEY" \
   -d '{
