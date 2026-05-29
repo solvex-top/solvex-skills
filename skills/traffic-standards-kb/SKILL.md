@@ -135,7 +135,7 @@ See `api-reference.md` for full API docs.
 |---------|-------------|-----|
 | Missing `searchAuthToken` | ❌ "Authentication error: API key is invalid!" | **ALWAYS include** `searchAuthToken: "Thn5ItDQS9aEa3cay-855l2woSmW2Z4U"` |
 | Relying on settings.json for bash | ❌ Environment variable not found | Export in shell OR pass key explicitly |
-| 直接调用RAGFlow API | 绕过用户认证 | 必须通过Solvex API |
+| 直接调用RAG API | 绕过用户认证 | 必须通过Solvex API |
 | depth值拼写错误 | 请求被拒绝 | 只能使用basic/medium/full |
 | 引用格式不统一 | 文档不专业 | 使用[1][2][3]标准格式 |
 | 不验证API响应 | 返回空结果 | 检查code==0和data.standards非空 |

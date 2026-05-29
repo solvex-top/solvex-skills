@@ -4,7 +4,7 @@
 
 **traffic-standards-kb** 是一个 Claude Code Skill，用于在编写中国智慧交通解决方案或技术方案时，自动检索和引用相关的国家标准（GB）、交通行业标准（JT/T）、公共安全行业标准（GA/T）等。
 
-该技能通过 Solvex API 查询 RAGFlow 知识库，将自然语言问题转化为标准文献检索，并以规范格式返回标准编号、标题、执行单位、适用范围等信息，便于在方案中直接引用。
+该技能通过 Solvex API 查询 RAG 知识库，将自然语言问题转化为标准文献检索，并以规范格式返回标准编号、标题、执行单位、适用范围等信息，便于在方案中直接引用。
 
 ## 安装
 
@@ -51,7 +51,7 @@ Claude 解析任务，提取领域关键词
        ↓
 调用 Solvex API /api/v1/standards/query
        ↓
-RAGFlow SearchBots API（两步检索）
+RAG SearchBots API（两步检索）
   ├─ Step 1: GET /api/v1/searchbots/detail?search_id={search_id}
   │           → 获取 kb_ids（知识库ID列表）
   └─ Step 2: POST /api/v1/searchbots/retrieval_test
@@ -199,13 +199,13 @@ curl -s -X POST "https://solvexpert.net/api/v1/standards/query" \
 |------|------|---------|
 | `401 Unauthorized` | 缺少或无效的 API Key | 检查 `X-API-Key` 请求头是否正确设置 |
 | `"Authentication error: API key is invalid!"` | 缺少 `searchAuthToken` | 确保请求体中包含 `searchAuthToken` 参数 |
-| `504 Gateway Timeout` | 请求超时（RAGFlow API 响应慢） | 降低 `depth` 参数，或等待后重试 |
+| `504 Gateway Timeout` | 请求超时（RAG API 响应慢） | 降低 `depth` 参数，或等待后重试 |
 | 空的标准数组 | 知识库中无匹配文档 | 检查查询关键词，尝试更换领域或调整问题 |
 | `400 Bad Request` | 参数值无效 | 检查 `depth` 只能为 basic/medium/full，`pageSize` 在 1-100 之间 |
 
 ## 标准元数据字段
 
-RAGFlow 知识库中的标准文档包含以下元数据：
+RAG 知识库中的标准文档包含以下元数据：
 
 | 字段 | 说明 | 示例 |
 |------|------|------|
@@ -275,6 +275,6 @@ RAGFlow 知识库中的标准文档包含以下元数据：
 1. **主动检索：** 编写智慧交通方案时，不要等用户要求，应主动检索并引用相关标准
 2. **验证响应：** 调用 API 后检查 `code == 0` 且 `data.standards` 非空
 3. **统一引用格式：** 使用 `[1]` `[2]` `[3]` 的标准引用格式
-4. **不要绕过 API：** 必须通过 Solvex API 查询，不要直接调用 RAGFlow API
+4. **不要绕过 API：** 必须通过 Solvex API 查询，不要直接调用 RAG API
 5. **注意版本：** GB 标准经常更新，不要凭记忆引用，务必通过 API 确认最新版本号
 6. **多个领域组合：** 编写综合方案时，可多次调用 API 覆盖不同领域

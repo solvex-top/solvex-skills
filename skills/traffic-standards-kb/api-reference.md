@@ -111,12 +111,12 @@ curl -X POST "https://solvexpert.net/api/v1/standards/query" \
   - Get API Key from: https://solvexpert.net
 
 ### 504 Gateway Timeout
-- **Cause:** Request taking longer than Nginx timeout (RAGFlow API slow)
+- **Cause:** Request taking longer than Nginx timeout (RAG API slow)
 - **Fix:** Timeout increased to 600s. If still timing out, reduce `depth` parameter.
 
 ### Empty Standards Array
 - **Cause:** No matching documents in knowledge base
-- **Fix:** Verify RAGFlow dataset has documents with proper metadata
+- **Fix:** Verify RAG dataset has documents with proper metadata
 
 ### 400 Bad Request
 - **Cause:** Invalid depth value or pageSize out of range
@@ -135,7 +135,7 @@ Skill (Parse task → Extract domain)
     ↓
 Solvex API /api/v1/standards/query (User API KEY auth)
     ↓
-RAGFlow SearchBots API (Two-Step Process)
+RAG SearchBots API (Two-Step Process)
     ├─ Step 1: /api/v1/searchbots/detail?search_id={search_id}
     │           → Get kb_ids from search configuration
     └─ Step 2: /api/v1/searchbots/retrieval_test
@@ -160,7 +160,7 @@ Valid `domains` array values:
 
 ## Standard Metadata Fields
 
-When adding PDF documents to RAGFlow:
+When adding PDF documents to RAG:
 
 | Field | Example |
 |-------|---------|
