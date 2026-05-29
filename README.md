@@ -52,7 +52,7 @@ npx skills remove <name>     # Remove a skill
 
 ### traffic-standards-kb
 
-Retrieve Chinese transportation standards (GB, JT/T, GA/T) via Solvex API for smart transportation solutions.
+Retrieve Chinese transportation standards (GB, JT, GA) via Solvex API for smart transportation solutions.
 
 **Supported domains:** Signal control, parking, monitoring, data collection, tolling, smart highway, service area, public transit, V2X, MaaS, and emerging areas.
 

@@ -49,13 +49,13 @@ export STANDARDS_API_KEY="solvex-your-api-key"
 
 | Domain | Keywords | Standards |
 |--------|----------|-----------|
-| Signal Control | 智慧路口, 交通信号, 自适应信号 | GB 14886, GB 25280 |
-| Parking | 智能停车, 停车诱导, 路侧停车 | GB/T 39775, JT/T 1353 |
-| Monitoring | 电子警察, 违章抓拍, 车牌识别 | GA/T 1400, GB/T 28181 |
-| Data Collection | 交通检测, 流量检测, 地磁, 雷达 | JT/T 1298, GB/T 20609 |
-| Tolling | ETC, 电子收费 | JT/T series, JTG B10-01 |
-| Smart Highway | 智慧高速, 高速监控 | JT/T 1560, JT/T series |
-| Service Area | 智慧服务区, 服务区设施 | JTJ 002, JT/T series |
+| Signal Control | 智慧路口, 交通信号, 自适应信号 | GB series, GB series |
+| Parking | 智能停车, 停车诱导, 路侧停车 | GB/T series, JT/T series |
+| Monitoring | 电子警察, 违章抓拍, 车牌识别 | GA/T series, GB/T series |
+| Data Collection | 交通检测, 流量检测, 地磁, 雷达 | JT/T series, GB/T series |
+| Tolling | ETC, 电子收费 | JT/T series, JTG series |
+| Smart Highway | 智慧高速, 高速监控 | JT/T series, JT/T series |
+| Service Area | 智慧服务区, 服务区设施 | JTJ series, JT/T series |
 | Public Transit | 智慧公交, BRT, 公交优先 | JT/T series |
 | V2X | V2X, V2V, V2I, C-V2X | GB/T series, YD/T series |
 | MaaS | MaaS, 出行即服务 | JT/T series |

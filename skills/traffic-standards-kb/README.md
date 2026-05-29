@@ -1,8 +1,8 @@
-# Traffic Standards Knowledge Base (traffic-standards-kb)
+# 交通标准知识库 (traffic-standards-kb)
 
 ## 简介
 
-**traffic-standards-kb** 是一个 Claude Code Skill，用于在编写中国智慧交通解决方案或技术方案时，自动检索和引用相关的国家标准（GB）、交通行业标准（JT/T）、公共安全行业标准（GA/T）等。
+**traffic-standards-kb** 是一个面向Agent的Skill，用于在编写中国智慧交通解决方案或技术方案时，自动检索和引用相关的国家标准（GB）、交通行业标准（JT）、公共安全行业标准（GA）等。
 
 该技能通过 Solvex API 查询 RAG 知识库，将自然语言问题转化为标准文献检索，并以规范格式返回标准编号、标题、执行单位、适用范围等信息，便于在方案中直接引用。
 
@@ -226,13 +226,13 @@ RAG 知识库中的标准文档包含以下元数据：
 
 | 领域 | 关键词 | 典型标准 |
 |------|--------|---------|
-| 信号控制 | 智慧路口、交通信号、自适应信号 | GB 14886, GB 25280 |
-| 停车系统 | 智能停车、停车诱导、路侧停车 | GB/T 39775, JT/T 1353 |
-| 交通监控 | 电子警察、违章抓拍、车牌识别 | GA/T 1400, GB/T 28181 |
-| 数据采集 | 交通检测、流量检测、地磁、雷达 | JT/T 1298, GB/T 20609 |
-| 收费系统 | ETC、电子收费 | JT/T series, JTG B10-01 |
-| 智慧高速 | 智慧高速、高速监控 | JT/T 1560, JT/T series |
-| 智慧服务区 | 智慧服务区、服务区设施 | JTJ 002, JT/T series |
+| 信号控制 | 智慧路口、交通信号、自适应信号 | GB series, GB series |
+| 停车系统 | 智能停车、停车诱导、路侧停车 | GB/T series, JT/T series |
+| 交通监控 | 电子警察、违章抓拍、车牌识别 | GA/T series, GB/T series |
+| 数据采集 | 交通检测、流量检测、地磁、雷达 | JT/T series, GB/T series |
+| 收费系统 | ETC、电子收费 | JT/T series, JTG series |
+| 智慧高速 | 智慧高速、高速监控 | JT/T series, JT/T series |
+| 智慧服务区 | 智慧服务区、服务区设施 | JTJ series, JT/T series |
 | 公共交通 | 智慧公交、BRT、公交优先 | JT/T series |
 | 车路协同 | V2X、V2V、V2I、C-V2X | GB/T series, YD/T series |
 | 出行服务 | MaaS、出行即服务 | JT/T series |
