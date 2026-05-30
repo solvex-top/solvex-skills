@@ -7,7 +7,7 @@ description: Use when writing Chinese smart transportation solutions (智慧路�
 
 ## Overview
 
-Retrieve Chinese transportation standards (GB, JT/T, GA/T) via Solvex API. Detects domain → queries API → formats citations.
+Retrieve Chinese transportation standards (GB, JT, GA) via Solvex API. Detects domain → queries API → formats citations.
 
 ## Installation
 
